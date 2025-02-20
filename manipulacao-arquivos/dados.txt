@@ -1,0 +1,3 @@
+Testando a escrita em um arquivo!
+Teste com Lua!
+Teste de append no arquivo
