@@ -1,5 +1,5 @@
 if not Pessoa then
-    Pessoa = {}
+    Pessoa = {} -- criando a "classe base" pessoa
 
     function Pessoa:new(nome, idade)
         local obj = {nome = nome, idade = idade}
@@ -13,4 +13,4 @@ if not Pessoa then
     end
 end
 
-return Pessoa
+return Pessoa -- garante que o require funcione corretamente
