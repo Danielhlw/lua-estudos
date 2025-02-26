@@ -4,12 +4,10 @@ if not ProfessorAluno then
     function ProfessorAluno:new(nome, idade, curso, materia)
         local obj = Aluno.new(self, nome, idade, curso) -- criando um objeto baseado na subclasse Aluno
         obj.materia = materia -- adicionando a matéria manualmente (herança da sublcasse Professor)
-
         -- configuramos a metatable para buscar métodos em ambas as classes
         setmetatable(obj, {__index = function(tabela, chave)
             return Aluno[chave] or Professor[chave] -- procura primeiro em Aluno, depois em Professor
         end})
-
         return obj
     end
 

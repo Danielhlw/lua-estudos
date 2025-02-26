@@ -6,8 +6,8 @@ if not Aluno then -- evita redefinição
     function Aluno:new(nome, idade, curso)
         local obj = Pessoa.new(self, nome, idade)
         obj.curso = curso -- novo atributo da subclasse Aluno
-        setmetatable(obj, self) -- metatable refeenciando a subclasse
-        self.__index = self -- permitir acessar os métodos da subclasse Aluno
+        setmetatable(obj, self) -- metatable refeenciando a subclasse, ou seja, agora obj tem Aluno como metatable
+        self.__index = self -- permitir acessar/herdar os métodos da subclasse Aluno
         return obj
         
     end
