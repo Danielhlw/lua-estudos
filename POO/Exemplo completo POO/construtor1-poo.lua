@@ -1,4 +1,4 @@
-if not Pessoa then
+if not Pessoa then -- evita redefinição da classe
     Pessoa = {} -- criando a "classe base" pessoa
 
     function Pessoa:new(nome, idade)

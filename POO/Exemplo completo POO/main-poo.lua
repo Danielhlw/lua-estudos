@@ -1,4 +1,5 @@
 require("aluno") -- Importa a subclasse Aluno, onde a classe base Pessoa já está global
+require("professor")
 require("professor-heranca-multipla")
 
 -- criando o objeto da classe base Pessoa
@@ -12,3 +13,6 @@ aluno1:info()
 -- Criando o objeto da subclasse Professor
 local professor1 = Professor:new("Felipe", 75, "Banco de Dados")
 professor1:ensinar()
+
+local profAluno = ProfessorAluno:new("Carlos", 35, "Engenharia", "Lua avançado")
+profAluno:ensinar() 
