@@ -21,6 +21,7 @@ end
 spawn(function() tarefa(">.< Tarefa 1") end)
 spawn(function() tarefa("UwU Tarefa 2") end)
 spawn(function() tarefa("OuO Tarefa 3") end)
+spawn(function() tarefa("X3 Tarefa 4") end)
 
 time.sleep(2)
 print("🟢 Todas as tarefas foram finalizadas! 🟢")
